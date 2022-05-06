@@ -1,0 +1,22 @@
+main{
+
+    .working{
+
+        h4{
+            font-size: 30px;
+            margin-left: 15px;
+        }
+
+        ol{
+            font-size: 20px;
+            width: 100%;
+
+            li{
+                background-color: lightgray;
+                padding: 20px;
+                border-radius: 20px;
+                width: 75%;
+            }
+        }
+    }
+}

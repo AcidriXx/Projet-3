@@ -63,3 +63,20 @@ header #text_h button {
   -webkit-box-shadow: 2px 5px 10px 0px #3c4046;
           box-shadow: 2px 5px 10px 0px #3c4046;
 }
+
+main .working h4 {
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+main .working ol {
+  font-size: 20px;
+  width: 100%;
+}
+
+main .working ol li {
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 20px;
+  width: 75%;
+}
