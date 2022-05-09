@@ -187,3 +187,7 @@ main #resto .resto_c .name_resto .fa-heart {
   margin-top: -65px;
   margin-left: 315px;
 }
+
+main #resto .resto_c .name_resto .fa-heart:hover {
+  color: #9356DC;
+}

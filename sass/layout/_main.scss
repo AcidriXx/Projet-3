@@ -118,6 +118,10 @@ main{
                     font-size: 30px;
                     margin-top: -65px;
                     margin-left: 315px;
+
+                          &:hover{
+                              color: $color-primary;
+                          }
                 }
             }
         }
