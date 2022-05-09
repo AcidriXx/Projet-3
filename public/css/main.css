@@ -191,3 +191,36 @@ main #resto .resto_c .name_resto .fa-heart {
 main #resto .resto_c .name_resto .fa-heart:hover {
   color: #9356DC;
 }
+
+footer {
+  background-color: #2a2a2a;
+  padding-top: 1px;
+  padding-bottom: 20px;
+}
+
+footer h3 {
+  font-size: 20px;
+  color: white;
+  margin-left: 25px;
+  padding-bottom: 10px;
+}
+
+footer li {
+  list-style: none;
+  font-size: 18px;
+  margin-left: -15px;
+  color: white;
+}
+
+footer li ul {
+  margin-top: -10px;
+}
+
+footer li ul a {
+  text-decoration: none;
+  color: white;
+}
+
+footer li ul .foot_icon {
+  padding-right: 2%;
+}

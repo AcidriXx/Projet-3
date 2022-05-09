@@ -1,11 +1,13 @@
 footer{
-    background-color: rgb(78, 77, 77);
+    background-color: #2a2a2a;
     padding-top: 1px;
+    padding-bottom: 20px;
 
     h3{
-        font-size: 25px;
+        font-size: 20px;
         color: white;
         margin-left: 25px;
+        padding-bottom: 10px;
     }
 
     li{
@@ -15,13 +17,17 @@ footer{
         color: white;
         
         ul{
-            text-decoration: none;
+            margin-top: -10px;
 
             a{
                 text-decoration: none;
                 color: white;
-                padding: 15px;
             }
+
+            .foot_icon{
+                padding-right: 2%;
+            }
+
         }
     }
 }
