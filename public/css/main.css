@@ -45,7 +45,7 @@ body .titre {
   font-family: 'Shrikhand',sans-serif;
 }
 
-header img {
+header .logo {
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
@@ -53,22 +53,69 @@ header img {
   padding-bottom: 15px;
 }
 
-header #location {
+#menu_h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#menu_h .arrow {
+  font-size: 25px;
+  margin-top: 18px;
+  margin-left: 20px;
+  margin-right: -50px;
+  color: black;
+}
+
+footer {
+  background-color: #2a2a2a;
+  padding-top: 1px;
+  padding-bottom: 20px;
+}
+
+footer .titre {
+  font-size: 20px;
+  color: white;
+  margin-left: 25px;
+  padding-bottom: 10px;
+}
+
+footer li {
+  list-style: none;
+  font-size: 18px;
+  margin-left: -15px;
+  color: white;
+}
+
+footer li ul {
+  margin-top: -10px;
+}
+
+footer li ul a {
+  text-decoration: none;
+  color: white;
+}
+
+footer li ul .foot_icon {
+  padding-right: 2%;
+}
+
+main #location {
   background-color: #d8d2d2;
 }
 
-header #location .loca {
+main #location .loca {
   font-size: 90%;
   padding: 20px;
   margin-left: 22%;
   margin-right: 22%;
 }
 
-header #location :before {
+main #location :before {
   padding-right: 15px;
 }
 
-header #text_h {
+main #text_h {
   background-color: #ebe4e4;
   margin-top: -35px;
   width: 100%;
@@ -76,7 +123,7 @@ header #text_h {
   padding-bottom: 60px;
 }
 
-header #text_h h3 {
+main #text_h h3 {
   font-size: 180%;
   margin-left: 10%;
   margin-right: 10%;
@@ -86,12 +133,12 @@ header #text_h h3 {
   -webkit-text-stroke: medium;
 }
 
-header #text_h p {
+main #text_h p {
   font-size: 125%;
   text-align: center;
 }
 
-header #text_h button {
+main #text_h button {
   font-size: 17px;
   margin-left: 21%;
   margin-right: 21%;
@@ -130,7 +177,7 @@ main #working #card_w .work .numb {
   margin-left: 10px;
   margin-top: 15px;
   background-color: #9356DC;
-  padding: 5%;
+  padding: 15px;
   padding-left: 5%;
   padding-right: 5%;
   border-radius: 40px;
@@ -138,6 +185,7 @@ main #working #card_w .work .numb {
   font-size: 15px;
   color: white;
   position: relative;
+  line-height: 20px;
 }
 
 main #working #card_w .work .work_t {
@@ -247,35 +295,104 @@ main #resto .resto_c .name_resto .fa-heart:hover {
   color: #9356DC;
 }
 
-footer {
-  background-color: #2a2a2a;
-  padding-top: 1px;
-  padding-bottom: 20px;
+#img_menu {
+  width: 100%;
 }
 
-footer .titre {
+#menu {
+  background-color: #f1f1f1;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding-top: 20px;
+  display: inline-block;
+  width: 100%;
+  margin-top: -40px;
+}
+
+#menu .titre {
+  margin-left: 15px;
+  font-size: 30px;
+}
+
+#menu .titre ::before {
+  margin-left: 120px;
+}
+
+#menu .service {
+  margin-left: 15px;
+  font-size: 19px;
+  width: 10%;
+  border-bottom: solid #99E2D0 3px;
+}
+
+#menu .plat_check {
+  background-color: white;
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 72px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 2px 5px 10px 0px #3c404659;
+          box-shadow: 2px 5px 10px 0px #3c404659;
+}
+
+#menu .plat_check .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+  display: initial;
+  width: 70%;
+  padding-top: 10px;
+}
+
+#menu .plat_check .description strong {
   font-size: 20px;
+}
+
+#menu .plat_check .description p {
+  margin: unset;
+}
+
+#menu .plat_check .prix {
+  padding-top: 21px;
+  padding-right: 20px;
+}
+
+#menu .plat_check .check {
+  background-color: #99E2D0;
   color: white;
-  margin-left: 25px;
-  padding-bottom: 10px;
+  font-size: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-footer li {
-  list-style: none;
-  font-size: 18px;
-  margin-left: -15px;
+#menu button {
+  font-size: 17px;
+  margin-left: 21%;
+  margin-right: 21%;
+  padding: 17px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 30px;
+  margin-top: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), color-stop(100%, #9356DC), color-stop(50%, #9356DC));
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%, #9356DC 50%);
   color: white;
-}
-
-footer li ul {
-  margin-top: -10px;
-}
-
-footer li ul a {
-  text-decoration: none;
-  color: white;
-}
-
-footer li ul .foot_icon {
-  padding-right: 2%;
+  border: none;
+  -webkit-box-shadow: 2px 5px 10px 0px #3c4046;
+          box-shadow: 2px 5px 10px 0px #3c4046;
+  margin-top: 35px;
+  margin-bottom: 90px;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  font-size: 20px;
 }

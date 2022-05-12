@@ -1,0 +1,81 @@
+ #img_menu{
+        width: 100%;
+    }
+    #menu{
+        background-color: #f1f1f1;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        padding-top: 20px;
+        display: inline-block;
+        width: 100%;
+        margin-top: -40px;
+
+        .titre{
+            margin-left: 15px;
+            font-size: 30px;
+
+                ::before{
+                    margin-left: 120px;
+                }
+
+            }
+        
+        .service{
+            margin-left: 15px;
+            font-size: 19px;
+            width: 10%;
+            border-bottom: solid $color-Tertiary 3px;
+        }
+        .plat_check{
+            background-color: white;
+            width: 94%;
+            margin-left: 3%;
+            margin-right: 3%;
+            border-radius: 20px;
+            display: flex;
+            height: 72px;
+            margin-bottom: 20px;
+            box-shadow: 2px 5px 10px 0px #3c404659;
+
+            .description{
+                display: flex;
+                margin-left: 10px;
+                display: initial;
+                width: 70%;
+                padding-top: 10px;
+
+                strong{
+                    font-size: 20px;
+                }
+                p{
+                    margin: unset;
+                }
+            }  
+
+            .prix{
+                padding-top: 21px;
+                padding-right: 20px;
+            }
+
+            .check{
+                background-color: $color-Tertiary;
+                color: white;
+                font-size: 25px;
+                padding-right: 20px;
+                padding-left: 20px;
+                padding-top: 20px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+
+            }
+            button{
+                @include btn;
+                margin-top: 35px;
+                margin-bottom: 90px;
+                margin-left: 25%;
+                margin-right: 25%;
+                width: 50%;
+                font-size: 20px;
+            }
+        }   
