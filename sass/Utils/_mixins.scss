@@ -11,4 +11,27 @@
         color: white;
         border: none;
         box-shadow: 2px 5px 10px 0px #3c4046;
+
+        &:hover{
+              box-shadow: 2px 5px 10px 5px #6f7377
+        }
  }
+
+ @mixin menu_delay {
+       animation: fadein 5s;
+       transform-origin: top 0%;
+       transition: transform 1s;
+
+
+       @keyframes fadein {
+              from {
+                  opacity:0;
+              }
+              to {
+                  opacity:1;
+              }
+       }
+}
+
+      
+       

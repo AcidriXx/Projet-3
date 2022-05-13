@@ -161,18 +161,32 @@ main{
                     -webkit-text-stroke: medium;
                     color: black;
                 }
-                .fa-heart{
+                .heart_1{
                     position: absolute;
                     font-size: 30px;
                     margin-top: -65px;
                     margin-left: 315px;
                     color: black;
 
-                          &:hover{
-                              color: $color-primary;
-                          }
                 }
             }
         }
     }
+}
+
+.heart_2{
+    opacity: 0;
+    position: absolute;
+    font-size: 30px;
+    margin-top: -65px;
+    margin-left: 315px;
+    transform: scale(0.1);
+
+    &:hover{
+        opacity: 1;
+        color: $color-primary;
+        transition: transform 50ms;
+        transform: scale(1);
+    }
+
 }
