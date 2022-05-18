@@ -1,0 +1,30 @@
+.preloader {
+    align-items: center;
+    background: #FFF;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    @include end;
+
+    .loader{
+        border: black solid;
+        width: 90%;
+        height: 5%;
+        position: relative;
+
+    }
+
+    .loader_bar{
+        position: relative;
+        background: $color-primary;
+        height: 100%;
+        @include load;
+
+        
+    }
+}

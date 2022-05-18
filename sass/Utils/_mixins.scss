@@ -20,7 +20,7 @@
  @mixin menu_delay {
        animation: fadein 5s;
        transform-origin: top 0%;
-       transition: transform 1s;
+       
 
 
        @keyframes fadein {
@@ -34,4 +34,35 @@
 }
 
       
+@mixin end {
+       animation: finish 1ms forwards ;
+       animation-delay: 5s;
+
+       @keyframes finish {
+              from {
+                   opacity: 1;
+                   transform: scale(1);
+              }
+              to {
+                   opacity: 0;
+                   transform: scale(0);
+              }
+       }
+} 
+
+@mixin load {
+       animation: loading 5s;
+       transform-origin: 0% 50%;
+
+       @keyframes loading {
+              from {  
+                   transform: scaleX(0);
+                   
+              }
+              to {
+                   transform: scaleX(1);
+                   
+              }
+       }
        
+}
