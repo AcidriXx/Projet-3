@@ -60,11 +60,29 @@ header .logo {
 }
 
 #menu_h .arrow {
-  font-size: 25px;
+  font-size: 150%;
   margin-top: 18px;
   margin-left: 20px;
   margin-right: -50px;
   color: black;
+}
+
+@media (min-width: 768px) {
+  #menu_h .arrow {
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #menu_h .arrow {
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #menu_h .arrow {
+    margin-top: 70px;
+  }
 }
 
 footer {
@@ -142,6 +160,12 @@ main #location .loca {
   }
 }
 
+@media (min-width: 1440px) {
+  main #location .loca {
+    margin-left: 40%;
+  }
+}
+
 main #location :before {
   padding-right: 15px;
 }
@@ -204,6 +228,12 @@ main #text_h button:hover {
   }
 }
 
+@media (min-width: 1440px) {
+  main #text_h button {
+    margin-left: 38%;
+  }
+}
+
 main #working h4 {
   font-size: 26px;
   margin-left: 15px;
@@ -239,6 +269,12 @@ main #working #card_w .work {
 @media (min-width: 1024px) {
   main #working #card_w .work {
     margin-left: 0px;
+  }
+}
+
+@media (min-width: 1440px) {
+  main #working #card_w .work {
+    margin-left: 8%;
   }
 }
 
@@ -328,6 +364,13 @@ main #resto .resto_c {
   position: relative;
 }
 
+@media (min-width: 1024px) {
+  main #resto .resto_c {
+    width: 39%;
+    display: inline-block;
+  }
+}
+
 main #resto .resto_c .new_resto {
   position: relative;
 }
@@ -352,12 +395,6 @@ main #resto .resto_c .new_resto .new {
   padding: 2% 4% 2% 4%;
   border-radius: 3px;
   font-weight: bolder;
-}
-
-@media (min-width: 768px) {
-  main #resto .resto_c .new_resto .new {
-    left: 80%;
-  }
 }
 
 main #resto .resto_c .name_resto {
@@ -422,6 +459,7 @@ main #resto .resto_c .name_resto p {
   display: inline-block;
   width: 100%;
   margin-top: -40px;
+  position: relative;
 }
 
 #menu .titre {
@@ -440,7 +478,7 @@ main #resto .resto_c .name_resto p {
   border-bottom: solid #99E2D0 3px;
 }
 
-#menu .plat_check {
+#menu .plat {
   background-color: white;
   width: 94%;
   margin-left: 3%;
@@ -477,7 +515,7 @@ main #resto .resto_c .name_resto p {
   }
 }
 
-#menu .plat_check .description {
+#menu .plat .description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,22 +523,41 @@ main #resto .resto_c .name_resto p {
   display: initial;
   width: 70%;
   padding-top: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-right: 15px;
 }
 
-#menu .plat_check .description strong {
+#menu .plat .description strong {
   font-size: 20px;
 }
 
-#menu .plat_check .description p {
+#menu .plat .description p {
   margin: unset;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-#menu .plat_check .prix {
+#menu .plat .prix_check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  #menu .plat .prix_check {
+    padding-left: 50%;
+  }
+}
+
+#menu .plat .prix_check .prix {
   padding-top: 21px;
   padding-right: 20px;
 }
 
-#menu .plat_check .check {
+#menu .plat .prix_check .check {
   background-color: #99E2D0;
   color: white;
   font-size: 25px;
@@ -509,7 +566,16 @@ main #resto .resto_c .name_resto p {
   padding-top: 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  display: none;
+  line-height: 35px;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+#menu .plat .prix_check .check:hover {
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 #menu button {
@@ -538,6 +604,64 @@ main #resto .resto_c .name_resto p {
 #menu button:hover {
   -webkit-box-shadow: 2px 5px 10px 5px #6f7377;
           box-shadow: 2px 5px 10px 5px #6f7377;
+}
+
+.heart_menu {
+  position: absolute;
+  font-size: 30px;
+  color: black;
+  top: 4%;
+  left: 85%;
+}
+
+@media (min-width: 1440px) {
+  .heart_menu {
+    top: 8%;
+    left: 90%;
+  }
+}
+
+.heart_menu_2 {
+  opacity: 0;
+  position: absolute;
+  font-size: 30px;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+  top: 4%;
+  left: 85%;
+}
+
+@media (min-width: 1440px) {
+  .heart_menu_2 {
+    top: 8%;
+    left: 90%;
+  }
+}
+
+.heart_menu_2:hover {
+  opacity: 1;
+  color: #9356DC;
+  -webkit-transition: -webkit-transform 3ms;
+  transition: -webkit-transform 3ms;
+  transition: transform 3ms;
+  transition: transform 3ms, -webkit-transform 3ms;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media (min-width: 1440px) {
+  .plat_menu {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 1440px) {
+  .plat_service {
+    padding-left: 5%;
+    width: 35%;
+  }
 }
 
 .preloader {
