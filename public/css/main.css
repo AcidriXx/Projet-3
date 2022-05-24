@@ -449,6 +449,9 @@ main #resto .resto_c .name_resto p {
 
 #img_menu {
   width: 100%;
+  height: 283px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #menu {
@@ -469,6 +472,12 @@ main #resto .resto_c .name_resto p {
 
 #menu .titre ::before {
   margin-left: 120px;
+}
+
+@media (max-width: 320px) {
+  #menu .titre {
+    font-size: 25px;
+  }
 }
 
 #menu .service {
