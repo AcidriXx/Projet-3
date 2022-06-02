@@ -67,3 +67,17 @@
        
 }
 
+@mixin check {
+       animation: check 1s forwards;
+       transform-origin: 50% 0%;
+
+       @keyframes check {
+              from{
+                     transform: scaleX(0);
+              }
+              to{
+                     transform: scaleX(1);
+              }
+              
+       }
+}

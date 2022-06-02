@@ -500,6 +500,8 @@ main #resto .resto_c .name_resto p {
   margin-bottom: 20px;
   -webkit-box-shadow: 2px 5px 10px 0px #3c404659;
           box-shadow: 2px 5px 10px 0px #3c404659;
+  position: relative;
+  overflow: hidden;
   -webkit-animation: fadein 5s;
           animation: fadein 5s;
   -webkit-transform-origin: top 0%;
@@ -524,13 +526,13 @@ main #resto .resto_c .name_resto p {
   }
 }
 
-#menu .plat .description {
+#menu .description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
   display: initial;
-  width: 70%;
+  width: 100%;
   padding-top: 10px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -538,35 +540,43 @@ main #resto .resto_c .name_resto p {
   padding-right: 15px;
 }
 
-#menu .plat .description strong {
+#menu .description strong {
   font-size: 20px;
 }
 
-#menu .plat .description p {
+#menu .description p {
   margin: unset;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-
-#menu .plat .prix_check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+#menu .description .prix {
+  position: absolute;
+  left: 70%;
+  bottom: 20%;
+}
+
+#menu .prix_check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #99E2D0;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  width: 27%;
+}
+
 @media (min-width: 768px) and (max-width: 1439px) {
-  #menu .plat .prix_check {
+  #menu .prix_check {
     padding-left: 50%;
   }
 }
 
-#menu .plat .prix_check .prix {
-  padding-top: 21px;
-  padding-right: 20px;
-}
-
-#menu .plat .prix_check .check {
+#menu .check {
   background-color: #99E2D0;
   color: white;
   font-size: 25px;
@@ -576,15 +586,12 @@ main #resto .resto_c .name_resto p {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   line-height: 35px;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  width: 30px;
 }
 
-#menu .plat .prix_check .check:hover {
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+#menu :active + .prix_check {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 
 #menu button {
