@@ -527,17 +527,12 @@ main #resto .resto_c .name_resto p {
 }
 
 #menu .description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: 10px;
-  display: initial;
   width: 100%;
   padding-top: 10px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  padding-right: 15px;
 }
 
 #menu .description strong {
@@ -549,25 +544,19 @@ main #resto .resto_c .name_resto p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
-#menu .description .prix {
-  position: absolute;
-  left: 70%;
-  bottom: 20%;
+#menu .prix {
+  padding-top: 20px;
+  margin-left: 25px;
 }
 
 #menu .prix_check {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: #99E2D0;
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
-  width: 27%;
+  width: 1%;
+  margin-left: 20px;
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
@@ -580,18 +569,38 @@ main #resto .resto_c .name_resto p {
   background-color: #99E2D0;
   color: white;
   font-size: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 25px;
   padding-top: 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   line-height: 35px;
-  width: 30px;
 }
 
 #menu :active + .prix_check {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
+  -webkit-animation: check 1s forwards;
+          animation: check 1s forwards;
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+}
+
+@-webkit-keyframes check {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 27%;
+  }
+}
+
+@keyframes check {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 27%;
+  }
 }
 
 #menu button {
