@@ -211,8 +211,10 @@ main #text_h button {
 }
 
 main #text_h button:hover {
-  -webkit-box-shadow: 2px 5px 10px 5px #6f7377;
-          box-shadow: 2px 5px 10px 5px #6f7377;
+  -webkit-box-shadow: 2px 5px 10px 5px #3c4046;
+          box-shadow: 2px 5px 10px 5px #3c4046;
+  -webkit-filter: brightness(1.05);
+          filter: brightness(1.05);
 }
 
 @media (min-width: 768px) {
@@ -566,14 +568,13 @@ main #resto .resto_c .name_resto p {
 }
 
 #menu .check {
-  background-color: #99E2D0;
   color: white;
   font-size: 25px;
-  padding-left: 25px;
-  padding-top: 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   line-height: 35px;
+  margin-top: 19px;
+  margin-left: 20px;
 }
 
 #menu :active + .prix_check {
@@ -603,6 +604,15 @@ main #resto .resto_c .name_resto p {
   }
 }
 
+#menu :active + .prix_check .check {
+  -webkit-transform: rotate(-1turn);
+          transform: rotate(-1turn);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
 #menu button {
   font-size: 17px;
   margin-left: 21%;
@@ -627,8 +637,10 @@ main #resto .resto_c .name_resto p {
 }
 
 #menu button:hover {
-  -webkit-box-shadow: 2px 5px 10px 5px #6f7377;
-          box-shadow: 2px 5px 10px 5px #6f7377;
+  -webkit-box-shadow: 2px 5px 10px 5px #3c4046;
+          box-shadow: 2px 5px 10px 5px #3c4046;
+  -webkit-filter: brightness(1.05);
+          filter: brightness(1.05);
 }
 
 .heart_menu {

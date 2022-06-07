@@ -13,7 +13,8 @@
         box-shadow: 2px 5px 10px 0px #3c4046;
 
         &:hover{
-              box-shadow: 2px 5px 10px 5px #6f7377
+              box-shadow: 2px 5px 10px 5px #3c4046;
+              filter: brightness(1.05);
         }
  }
 

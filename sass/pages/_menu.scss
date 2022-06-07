@@ -83,20 +83,24 @@
             }
 
             .check{
-                background-color: $color-Tertiary;
                 color: white;
                 font-size: 25px;
-                padding-left: 25px;
-                padding-top: 20px;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
                 line-height: 35px;
+                margin-top: 19px;
+                margin-left: 20px;
                 
                
                 }
             :active + .prix_check{
                 transform: scale(1,1);
                 @include check;
+                 
+                .check{
+                    transform: rotate(-1turn);
+                    transition: transform 500ms ease-in-out;
+                }
 
 
             }    
