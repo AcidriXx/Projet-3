@@ -21,8 +21,13 @@
                     margin-left: 120px;
                 }
                 @media (max-width:320px) {
-                    font-size: 25px;
-                    
+                    font-size: 25px;   
+                }
+                @media (min-width:1920px){
+                    margin-left: 30px;
+                }
+                @media (min-width:2260px) {
+                    margin-left: 40px;
                 }
 
             }
@@ -159,6 +164,12 @@
             @media (min-width:1440px) {
                 padding-left: 5%;
                 width: 35%;
+            }
+            @media (min-width:1920px){
+                padding-left: 15%;
+            }
+            @media (min-width:2260px) {
+                padding-left: 27%;
             }
 
         }

@@ -166,6 +166,19 @@ main #location .loca {
   }
 }
 
+@media (min-width: 1920px) {
+  main #location .loca {
+    margin-left: 43%;
+  }
+}
+
+@media (min-width: 2260px) {
+  main #location .loca {
+    font-size: 190%;
+    margin-left: 42%;
+  }
+}
+
 main #location :before {
   padding-right: 15px;
 }
@@ -236,10 +249,28 @@ main #text_h button:hover {
   }
 }
 
+@media (min-width: 1920px) {
+  main #text_h button {
+    margin-left: 41%;
+  }
+}
+
+@media (min-width: 2260px) {
+  main #text_h button {
+    margin-left: 44%;
+  }
+}
+
 main #working h4 {
   font-size: 26px;
   margin-left: 15px;
   -webkit-text-stroke: medium;
+}
+
+@media (min-width: 2260px) {
+  main #working h4 {
+    margin-left: 130px;
+  }
 }
 
 main #working #card_w {
@@ -277,6 +308,18 @@ main #working #card_w .work {
 @media (min-width: 1440px) {
   main #working #card_w .work {
     margin-left: 8%;
+  }
+}
+
+@media (min-width: 1920px) {
+  main #working #card_w .work {
+    margin-left: 11%;
+  }
+}
+
+@media (min-width: 2260px) {
+  main #working #card_w .work {
+    margin-left: 15%;
   }
 }
 
@@ -479,6 +522,18 @@ main #resto .resto_c .name_resto p {
 @media (max-width: 320px) {
   #menu .titre {
     font-size: 25px;
+  }
+}
+
+@media (min-width: 1920px) {
+  #menu .titre {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 2260px) {
+  #menu .titre {
+    margin-left: 40px;
   }
 }
 
@@ -698,6 +753,18 @@ main #resto .resto_c .name_resto p {
   .plat_service {
     padding-left: 5%;
     width: 35%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .plat_service {
+    padding-left: 15%;
+  }
+}
+
+@media (min-width: 2260px) {
+  .plat_service {
+    padding-left: 27%;
   }
 }
 
