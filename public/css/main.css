@@ -104,7 +104,7 @@ footer .titre {
   }
 }
 
-footer li {
+footer ul {
   list-style: none;
   font-size: 18px;
   margin-left: -15px;
@@ -112,21 +112,17 @@ footer li {
 }
 
 @media (min-width: 768px) {
-  footer li {
+  footer ul {
     font-size: 21px;
   }
 }
 
-footer li ul {
-  margin-top: -10px;
-}
-
-footer li ul a {
+footer ul li a {
   text-decoration: none;
   color: white;
 }
 
-footer li ul .foot_icon {
+footer ul li .foot_icon {
   padding-right: 2%;
 }
 
