@@ -555,27 +555,33 @@ main #resto .resto_c .name_resto p {
           box-shadow: 2px 5px 10px 0px #3c404659;
   position: relative;
   overflow: hidden;
-  -webkit-animation: fadein 5s;
-          animation: fadein 5s;
-  -webkit-transform-origin: top 0%;
-          transform-origin: top 0%;
+  -webkit-animation: fadein 7s;
+          animation: fadein 7s;
 }
 
 @-webkit-keyframes fadein {
   from {
     opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes fadein {
   from {
     opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
   to {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -604,18 +610,24 @@ main #resto .resto_c .name_resto p {
   margin-left: 25px;
 }
 
+@media (min-width: 768px) and (max-width: 840px) {
+  #menu .prix {
+    padding-left: 305px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  #menu .prix {
+    padding-left: 560px;
+  }
+}
+
 #menu .prix_check {
   background-color: #99E2D0;
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
   width: 1%;
   margin-left: 20px;
-}
-
-@media (min-width: 768px) and (max-width: 1439px) {
-  #menu .prix_check {
-    padding-left: 50%;
-  }
 }
 
 #menu .check {
@@ -626,6 +638,12 @@ main #resto .resto_c .name_resto p {
   line-height: 35px;
   margin-top: 19px;
   margin-left: 20px;
+}
+
+@media (max-width: 320px) {
+  #menu .check {
+    padding-right: 20px;
+  }
 }
 
 #menu :active + .prix_check {

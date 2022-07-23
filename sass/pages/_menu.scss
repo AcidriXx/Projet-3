@@ -74,6 +74,14 @@
             .prix{
                 padding-top: 20px;
                 margin-left: 25px;
+
+                @media (min-width:768px) and (max-width:840px) {
+                    padding-left: 305px;
+                }
+                @media (min-width:1024px) and (max-width:1439px) {
+                    padding-left: 560px;
+                    
+                }
             }
 
             .prix_check{
@@ -81,10 +89,7 @@
                 transform: scale(0,1);
                 width: 1%;
                 margin-left: 20px;
-                @media (min-width:768px) and (max-width:1439px) {
-                    padding-left: 50%;
-                    
-                }
+                
             }
 
             .check{
@@ -95,6 +100,10 @@
                 line-height: 35px;
                 margin-top: 19px;
                 margin-left: 20px;
+
+                @media (max-width:320px) {
+                    padding-right: 20px;
+                }
                 
                
                 }
